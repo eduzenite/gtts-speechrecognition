@@ -20,6 +20,8 @@ Por fim, criei um loop principal que:
 # Execução
 Para executar o código será preciso instalar as bibliotecas:
 ```shell
+python3 -m venv venv
+source venv/bin/activate
 pip install gtts
 pip install SpeechRecognition
 ```
