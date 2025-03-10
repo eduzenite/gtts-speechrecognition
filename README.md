@@ -8,9 +8,10 @@ Criei um dicionário contendo todas as frases utilizadas no atendimento, incluin
 Para otimizar o processo, implementei um loop que percorre todas as frases do dicionário, gera os arquivos de áudio correspondentes e os armazena na pasta “arquivos/”.
 Além disso, desenvolvi:
 - Uma função para tocar os áudios armazenados
-- Uma função para capturar o áudio da fala do usuário, transcrevê-lo e retornar o texto correspondente. Dentro dessa função, implementei duas exceções:
--- sr.UnknownValueError: Caso o sistema não consiga entender o que foi falado.
--- sr.RequestError: Caso ocorra um erro na comunicação com o serviço de reconhecimento de voz.
+- Uma função para capturar o áudio da fala do usuário, transcrevê-lo e retornar o texto correspondente.
+  - Dentro dessa função, implementei duas exceções:
+    - sr.UnknownValueError: Caso o sistema não consiga entender o que foi falado.
+    - sr.RequestError: Caso ocorra um erro na comunicação com o serviço de reconhecimento de voz.
 Por fim, criei um loop principal que:
 - Apresenta as opções do menu ao cliente
 - Captura a resposta do usuário via comando de voz
