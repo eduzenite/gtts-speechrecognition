@@ -19,7 +19,7 @@ Por fim, criei um loop principal que:
 - Permite que o usuário continue interagindo ou encerre o atendimento
 # Execução
 Para executar o código será preciso instalar as bibliotecas:
-```console
+```shell
 pip install gtts
 pip install SpeechRecognition
 ```
